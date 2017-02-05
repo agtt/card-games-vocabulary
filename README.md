@@ -1,9 +1,9 @@
 # card-games-vocabulary
-A game to remenber the English vocabulary words
+A game to remember the English vocabulary words
 #How to start
 Clone the project
 ```
-git clone git@github.com:qf3/card-games-word.git
+git clone git@github.com:qf3/card-games-vocabulary.git
 ```
 Install the dependencies
 ```
