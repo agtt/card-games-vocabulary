@@ -1,7 +1,7 @@
 {
-  "name": "card-games-word",
+  "name": "card-games-vocabulary",
   "version": "1.0.0",
-  "description": "A game to remenber the words",
+  "description": "A game to remember the English vocabulary words",
   "main": "index.js",
   "scripts": {
     "test": "",
