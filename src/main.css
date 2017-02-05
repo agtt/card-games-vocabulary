@@ -1,0 +1,189 @@
+html,body{
+	margin:0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(37,36,44);
+	color: rgb(57,177,198);
+	box-sizing: content-box;
+}
+
+
+
+#root{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	/*align-items: center; */
+}
+
+/* CountDown */
+.countDownContainer{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(37,36,44,0.85);
+}
+.countDownContainer>.countDown{
+	height: 100%;
+	width: 100%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.countDownContainer>.countDown>.timer{
+	width: 2em;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 1px solid red;
+	font-size: 3em;
+}
+.countDownContainer>.countDown>.timer>h1{
+	font-size: 5rem;
+	color: rgb(236,63,140);
+}
+
+/* Confirm */
+.confirmContainer{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(37,36,44,0.85);
+}
+.confirmContainer>.confirmWrapper{
+	height: 100%;
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;   
+}
+.confirmContainer>.confirmWrapper>.confirm{
+	height: 15em;
+	width: 28em;
+	display: flex;
+	flex-direction: column; 
+	text-align: center;
+}
+.confirmContainer>.confirmWrapper>.confirm>*{
+	text-align: center;
+	flex:1 1 auto;
+}
+.confirmContainer>.confirmWrapper>.confirm>.button{
+	display: flex;
+	justify-content: space-around; 
+}
+.confirmContainer>.confirmWrapper>.confirm>.button>div{
+	background-color: rgb(37,36,44);
+	width: 3em;
+	height:2em;
+	line-height: 2em;
+	cursor: pointer;
+	font-size: 2em;
+	font-weight: bold;
+	color: rgb(57,177,198);
+}
+.confirmContainer>.confirmWrapper>.confirm>.button>div:hover{
+	/*box-shadow: 0 0 2px 3px black;*/
+	border: 3px dashed rgb(57,177,198);
+	border-radius:1em;
+}
+.confirmContainer>.confirmWrapper>.confirm>.button>div:nth-child(1){
+	color: rgb(31,210,106);
+}
+.confirmContainer>.confirmWrapper>.confirm>.button>div:nth-child(2){
+	color: rgb(236,63,140);
+}
+
+/* ScoreBoard */
+.scoreBoard{
+	
+	margin-bottom: 2vh;
+	
+	display:flex;
+	justify-content: space-around;
+	border: 3px dashed rgb(57,177,198);
+	border-radius:1em;
+}
+ .scoreBoard>h1:nth-child(2n){
+	margin-left: -2em;
+	color: rgb(236,63,140);
+} 
+
+/* reportCard */
+.reportCard{
+	width: 50em;
+	display:flex;
+	text-align: center;
+	justify-content: space-around;
+}
+.reportCard h1:nth-child(2n){
+	color: rgb(236,63,140);
+}
+.reportCard .wrongWords>h1:first-child{
+	color:  rgb(31,210,106);
+}
+.reportCard .wrongWords{
+	display:flex;
+	flex-wrap: wrap;
+	width: 30em;
+	height: 22em;
+	justify-content: space-around;
+
+}
+.reportCard .wrongWords>.detail{
+	text-align: center;
+	width: 8em;
+	height: 9.5em;
+	border-radius:1em;
+	border: 3px dashed rgb(236,63,140);
+	color: rgb(236,63,140);
+}
+
+/* CardsBoard */
+.cardsContainer{
+	width: 39em;
+	height: 32em;
+	display: flex;
+	flex-wrap: wrap;
+}
+.cardsWrapper{
+
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	flex: 1 1 auto;
+	
+}
+/* Card */
+.card{
+	width: 8em;
+	height: 9.5em;
+	cursor: pointer;
+	text-align: center;
+	border-radius:1em;
+	transition: border,color 1s ease-in-out; 
+	
+}
+.card.colorB{
+	border: 3px dashed rgb(57,177,198);
+	color: rgb(57,177,198);
+}
+.card.colorP{
+	border: 3px dashed rgb(236,63,140);
+	color: rgb(236,63,140);
+}
+.card.colorB.colorG{
+	border: 3px dashed rgb(31,210,106) !important;
+
+}
+

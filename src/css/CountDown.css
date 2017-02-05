@@ -1,0 +1,23 @@
+/* CountDown */
+@value colors: './public/main.css';
+@value colorB, colorR, colorG from colors;
+.countDownContainer{
+	composes: pageDimmer from './public/main.css';
+}
+.countDown{
+	height: 100%;
+	width: 100%;
+	composes: publicFlex from './public/main.css';
+	flex-direction: column;
+}
+.timer{
+	width: 2em;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 3em;
+}
+.timer>h1{
+	font-size: 5rem;
+	color: colorR;
+}

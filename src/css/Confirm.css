@@ -1,0 +1,48 @@
+/* Confirm */
+@value colors: './public/main.css';
+@value colorB, colorR, colorG from colors;
+
+.confirmContainer{
+	composes: pageDimmer from './public/main.css';
+}
+.confirmWrapper{
+	height: 100%;
+	width: 100%;
+	composes: publicFlex from './public/main.css';
+}
+.confirm{
+	height: 15em;
+	width: 28em;
+	display: flex;
+	flex-direction: column; 
+	text-align: center;
+}
+.confirm>*{
+	text-align: center;
+	flex:1 1 auto;
+}
+.button{
+	display: flex;
+	justify-content: space-around; 
+}
+.button>div{
+	/* background-color: rgb(37,36,44); */
+	width: 3em;
+	height:2em;
+	line-height: 2em;
+	cursor: pointer;
+	font-size: 2em;
+	font-weight: bold;
+	color: colorB;
+}
+.button>div:hover{
+	/*box-shadow: 0 0 2px 3px black;*/
+	border: 3px dashed colorB;
+	border-radius:1em;
+}
+.button>div:nth-child(1){
+	color: colorG;
+}
+.button>div:nth-child(2){
+	color: colorR;
+}

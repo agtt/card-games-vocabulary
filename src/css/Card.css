@@ -1,0 +1,33 @@
+/* Card */
+@value colors: './public/main.css';
+@value colorB, colorR, colorG from colors;
+.card{
+
+	composes: publicFlex from './public/main.css';
+	width: 8em;
+	height: 9.5em;
+	cursor: pointer;
+	text-align: center;
+	border-radius:1em;
+	transition: border,color 1s ease-in-out; 
+	
+}
+.colorB{
+	composes: card;
+	border: 3px dashed colorB;
+	color: colorB;
+}
+.colorR{
+	composes: card;
+	border: 3px dashed colorR;
+	color: colorR;
+}
+.colorG{
+	composes:card;
+	border: 3px dashed colorG;
+
+}
+.stableSize{
+	width: 6em;
+	height: 7em;
+}

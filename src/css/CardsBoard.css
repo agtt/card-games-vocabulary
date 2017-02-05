@@ -1,0 +1,13 @@
+/* CardsBoard */
+.cardsContainer{
+	width: 39em;
+	height: 32em;
+	display: flex;
+	flex-wrap: wrap;
+}
+.cardsWrapper{
+
+	composes: publicFlex from './public/main.css';
+	flex: 1 1 auto;
+	
+}

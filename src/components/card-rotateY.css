@@ -1,0 +1,51 @@
+.parent{
+	width: 400px;
+	height: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:row;
+
+}
+.child{
+	flex: 1 1 auto;
+	border: 1px solid black;
+	width: 80px;
+	height: 100px;
+}
+
+.front{
+	position: absolute;
+	background-color: red;
+	z-index: 1;
+	backface-visibility: hidden;
+	width: 80px;
+	height: 100px;
+	cursor: pointer;
+
+	transition:all 1s ease-in-out;
+
+}
+.front.front1{
+	 transform: rotateY(0deg); 
+	
+}
+.front.front2{
+	 transform: rotateY(180deg); 
+	
+}
+
+.back{
+	position: absolute;
+	background-color: yellow;
+	width: 80px;
+	height: 100px;
+	transition:all 1s ease-in-out;
+	cursor: pointer;
+}
+.back.back1{
+	transform: rotateY(180deg);
+}
+.back.back2{
+	transform: rotateY(360deg);
+}
+

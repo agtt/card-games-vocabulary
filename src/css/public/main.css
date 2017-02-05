@@ -1,0 +1,45 @@
+/* card-game-word */
+
+@value backGroundColor: rgb(37,36,44);
+@value colorB: rgb(57,177,198);
+@value colorR: rgb(236,63,140);
+@value colorG: rgb(31,210,106);
+
+html,body{
+
+	  padding: 0;
+	  height: 100%;
+	  width: 100%;
+	  background-color: backGroundColor;
+	  color:colorB;
+	  box-sizing: border-box;
+}
+
+#root{
+	
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	/*align-items: center; */
+}
+
+ .publicFlex{
+	
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+} 
+
+.pageDimmer{
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(37,36,44,0.85);
+}
+

@@ -1,0 +1,38 @@
+/* reportCard */
+@value colors: './public/main.css';
+@value colorB, colorR, colorG from colors;
+
+.reportCard{
+	width: 50em;
+	display:flex;
+	text-align: center;
+	justify-content: space-around;
+	align-items: center; 
+}
+.accuracy{
+	height: 22em;
+}
+/* .reportCard h1:nth-child(2n){
+	color: colorR;
+} */
+.accuracy>h1{
+	color: colorR;
+}
+.wrongWords>h1:first-child{
+	color:  colorG;
+}
+.wrongWords{
+	display:flex;
+	flex-wrap: wrap;
+	width: 30em;
+	height: 22em;
+	justify-content: space-around;
+}
+.detail{
+	text-align: center;
+	width: 8em;
+	height: 9.5em;
+	border-radius:1em;
+	border: 3px dashed colorR;
+	color: colorR;
+}

@@ -1,0 +1,44 @@
+{
+  "name": "card-games-word",
+  "version": "1.0.0",
+  "description": "A game to remenber the words",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "start": "node server",
+    "build": "rimraf dist && webpack --config ./webpack.production.config.js --progress --profile --colors"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "css-modules"
+    "words game"
+  ],
+  "author": "qf",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-css-modules": "^4.1.0",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0",
+    "redux-logger": "^2.7.4",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.26.0",
+    "postcss-loader": "^1.2.2",
+    "postcss-modules-values": "^1.2.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-merge": "^2.6.1"
+  }
+}

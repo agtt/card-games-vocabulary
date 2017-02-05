@@ -1,0 +1,16 @@
+/* ScoreBoard */
+@value colors: './public/main.css';
+@value colorB, colorR, colorG from colors;
+
+.scoreBoard{
+	
+	margin-bottom: 2vh;
+	display:flex;
+	justify-content: space-around;
+	border: 3px dashed colorB;
+	border-radius:1em;
+}
+ .scoreBoard>h1:nth-child(2n){
+	margin-left: -2em;
+	color: colorR
+} 
