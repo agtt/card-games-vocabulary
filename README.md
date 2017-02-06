@@ -1,4 +1,4 @@
-# card-games-vocabulary
+# Card Games vocabulary
 A game to remember the English vocabulary words
 #How to start
 Clone the project
