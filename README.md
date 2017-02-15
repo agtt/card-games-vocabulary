@@ -22,7 +22,7 @@ If you want to start with the production build,run `npm run build`instead
 * The colors of matched words will be changed
 * If you get all the words,the `ReportCard` will show the result
 
-<!--Tech:Git,HTML,CSS,CSS3,JavaScript,ES6/7,Babel,React,Redux,PostCSS,CSS-Modules,WebPack-->
+<sub>Tech:Git,HTML,CSS,CSS3,JavaScript,ES6/7,Babel,React,Redux,PostCSS,CSS-Modules,WebPack</sub>
 
 #License
 MIT
