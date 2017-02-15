@@ -11,8 +11,20 @@
   "keywords": [
     "react",
     "redux",
-    "css-modules"
+    "css-modules",
     "words game"
+  ],
+  "tech":[
+    "JavaScript",
+    "ES6/7",
+    "Babel",
+    "React",
+    "Redux",
+    "CSS",
+    "CSS3",
+    "PostCSS",
+    "CSS Modules",
+    "WebPack"
   ],
   "author": "qf",
   "license": "MIT",
